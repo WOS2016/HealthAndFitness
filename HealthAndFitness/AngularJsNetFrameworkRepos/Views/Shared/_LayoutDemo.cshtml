@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="@AngularJsNetFrameworkRepos.App_Start.Settings.SiteDescription">
+
+    @Styles.Render("~/Content/css")
+    @*@{ Html.RenderPartial("_Urls"); }*@
+
+    @{
+        var language = AngularJsNetFrameworkRepos.App_Start.Settings.DefaultLanguage;
+        var langCookie = Request.Cookies["demolang"];
+        if (langCookie != null && !string.IsNullOrEmpty(langCookie.Value))
+        {
+            var cookieLanguage = langCookie.Value.Replace("%22", string.Empty);
+            if (System.Text.RegularExpressions.Regex.IsMatch(cookieLanguage, "^[a-z]{2}-[a-zA-Z]{2}$"))
+            {
+                language = cookieLanguage;
+            }
+        }
+    }
+</head>
+<body ng-app="demoApp" ng-cloak>
+    @RenderBody()
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/angularjs")
+    @Scripts.Render("~/bundles/demoApp")
+
+
+    @Scripts.Render("~/bundles/bootstrap")
+    <script src="@Url.Content("~/Scripts/i18n/angular-locale_" + language + ".js")"></script>
+    @RenderSection("scripts", required: false)
+</body>
+
+</html>

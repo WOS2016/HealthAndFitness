@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "IndexAngularjs";
+    Layout = "~/Views/Shared/_LayoutDemo.cshtml";
+}
+
+
+
+<header class="main-header" ng-controller="appHeaderLte">
+    @*<a href="#/dashboard" class="logo">
+        Demo
+    </a>*@
+    <pre>{{names |json}}</pre>
+</header>
+
+@*<aside class="main-sidebar sidebar-offcanvas" ng-controller="appAsideLte">
+
+</aside>*@
+<!-- Right side column. Contains the navbar and content of the page -->
+<aside class="content-wrapper" ng-mobile-toggle-aside-lte>
+    <div class="page" ng-view>
+    </div>
+</aside>
+
+<footer class="main-footer">
+    <div class="pull-right hidden-xs">
+        <b>Version</b> 1.0
+    </div>
+    <strong>Copyright &copy; 2016-2017 <a href="#">Demo AngularJS</a>.</strong> All rights reserved.
+</footer>
+
