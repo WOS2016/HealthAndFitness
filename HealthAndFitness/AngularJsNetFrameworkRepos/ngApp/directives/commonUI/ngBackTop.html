@@ -1,0 +1,16 @@
+﻿<!--<div id="backtop" class="{{theme}}">
+    <button ng-click="gotoElement()"><div ng-transclude>{{text}}</div></button>
+</div>-->
+
+<div id="backtop" class="full-width {{theme}}">
+    <button ng-click="gotoElement()"><div ng-transclude>{{text}}</div></button>
+</div>
+
+<br/>
+
+<div ng-show="display" class="scroll-to animate-show">
+    <!--<a href="javascript:void(0)"><i class="fa fa-angle-double-up fa-2x"></i>{{text}}</a>-->
+    <!--<a href="" ng-click="vm.goto('top')"><i class="fa fa-angle-double-up fa-2x"></i>{{text}}</a>-->
+    <!--<a href="#"><i class="fa fa-angle-double-up fa-2x"></i>{{text}}</a>-->
+    <a href="javascript:void(0)" ng-click="vm.scrollTo('top')"><i class="fa fa-angle-double-up fa-2x"></i>{{text}}</a>
+</div>

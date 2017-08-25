@@ -265,6 +265,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="ngApp\demoApp.js" />
+    <Content Include="ngApp\directives\commonUI\ngBackTop.html" />
+    <Content Include="ngApp\directives\commonUI\ngBackTop.js" />
+    <Content Include="ngApp\services\ExportReportingService.js" />
     <Content Include="ngApp\services\httpServices.js" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
@@ -344,6 +347,7 @@
     <Content Include="ngApp\translations\fr-FR.json" />
     <Content Include="ngApp\translations\ja_JP.json" />
     <Content Include="ngApp\translations\zh_CN.json" />
+    <Content Include="Content\LessStyles\Generic\ngBackTop.less" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\i18n\angular-locale_af-na.js" />
     <Content Include="Scripts\i18n\angular-locale_af-za.js" />
@@ -1137,14 +1141,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\LessStyles\Generic\" />
     <Folder Include="Content\LessStyles\Layout\" />
     <Folder Include="Content\LessStyles\Modules\" />
     <Folder Include="Content\LessStyles\State\" />
     <Folder Include="Content\LessStyles\Theme\" />
     <Folder Include="Content\LessStyles\Vendors\" />
     <Folder Include="ngApp\controllers\" />
-    <Folder Include="ngApp\directives\" />
     <Folder Include="ngApp\filters\" />
   </ItemGroup>
   <ItemGroup>

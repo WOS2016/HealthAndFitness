@@ -10,19 +10,19 @@ namespace AngularJsNetFrameworkRepos
         // For more information on bundling, visit https://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
-
-//            bundles.Add(new ScriptBundle("~/bundles/vendor")
-//#if DEBUG
-//                .IncludeDirectory("~/Scripts/Vendor_dev/Ring0", "*.js", true)
-//                .IncludeDirectory("~/Scripts/Vendor_dev/Ring1", "*.js", true)
-//                .IncludeDirectory("~/Scripts/Vendor_dev/Ring2", "*.js", true)
-//                .IncludeDirectory("~/Scripts/Vendor_dev/Ring3", "*.js", true)
-//#else
-//                .IncludeDirectory("~/Scripts/Vendor/Ring0", "*.js", true)
-//                .IncludeDirectory("~/Scripts/Vendor/Ring1", "*.js", true)
-//                .IncludeDirectory("~/Scripts/Vendor/Ring2", "*.js", true)
-//                .IncludeDirectory("~/Scripts/Vendor/Ring3", "*.js", true)
-//#endif
+            String timeStamp = DateTime.Now.ToString("yyyyMMddHHmmssffff");
+            //            bundles.Add(new ScriptBundle("~/bundles/vendor")
+            //#if DEBUG
+            //                .IncludeDirectory("~/Scripts/Vendor_dev/Ring0", "*.js", true)
+            //                .IncludeDirectory("~/Scripts/Vendor_dev/Ring1", "*.js", true)
+            //                .IncludeDirectory("~/Scripts/Vendor_dev/Ring2", "*.js", true)
+            //                .IncludeDirectory("~/Scripts/Vendor_dev/Ring3", "*.js", true)
+            //#else
+            //                .IncludeDirectory("~/Scripts/Vendor/Ring0", "*.js", true)
+            //                .IncludeDirectory("~/Scripts/Vendor/Ring1", "*.js", true)
+            //                .IncludeDirectory("~/Scripts/Vendor/Ring2", "*.js", true)
+            //                .IncludeDirectory("~/Scripts/Vendor/Ring3", "*.js", true)
+            //#endif
 
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                 "~/Scripts/jquery-{version}.js"));
@@ -55,6 +55,7 @@ namespace AngularJsNetFrameworkRepos
             bundles.Add(new StyleBundle("~/Content/css").Include(
                  "~/Content/bootstrap.css",
                  "~/Content/Site.css"));
+                 //"~/Content/Site.css?v=" + timeStamp));
 
             // AngularJS
             bundles.Add(new Bundle("~/bundles/angularjs").Include(
