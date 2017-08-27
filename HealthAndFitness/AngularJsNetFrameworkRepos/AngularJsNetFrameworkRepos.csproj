@@ -267,6 +267,8 @@
     <Content Include="ngApp\demoApp.js" />
     <Content Include="ngApp\directives\commonUI\ngBackTop.html" />
     <Content Include="ngApp\directives\commonUI\ngBackTop.js" />
+    <Content Include="ngApp\directives\commonUI\ngColorPicker.html" />
+    <Content Include="ngApp\directives\commonUI\ngColorPicker.js" />
     <Content Include="ngApp\services\ExportReportingService.js" />
     <Content Include="ngApp\services\httpServices.js" />
     <Content Include="Scripts\angular-animate.js" />
