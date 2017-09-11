@@ -1,0 +1,19 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70">
+  <defs>
+    <style type="text/css">
+      <![CDATA[
+      path {
+          fill: none;
+          stroke-width: 2px;
+          stroke: currentColor;
+          vector-effect: non-scaling-stroke;
+          }
+    ]]>
+    </style>
+  </defs>
+  <path d="M1 16h68"></path>
+  <circle cx="8" cy="10" r="1"></circle>
+  <path d="M54.6 33.6l-2.5-8.7-8.7-2.5"></path>
+  <path d="M52.1 24.9l-16 16-8.1-8L16 45"></path>
+  <path d="M66 3.9H4c-1.7 0-3 1.3-3 3v46c0 1.7 1.3 3 3 3h62c1.7 0 3-1.3 3-3v-46c0-1.6-1.3-3-3-3zM35 55.9v10M18 65.9h34"></path>
+</svg>

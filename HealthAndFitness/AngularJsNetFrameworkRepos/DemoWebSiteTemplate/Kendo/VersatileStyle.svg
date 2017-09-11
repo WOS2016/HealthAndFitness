@@ -1,0 +1,65 @@
+﻿<!--
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 70 70"
+     style="enable-background:new 0 0 70 70;" xml:space="preserve">
+     
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <style type="text/css">
+      <![CDATA[
+      path {
+          fill: none;
+          stroke-width: 2px;
+          stroke: currentColor;
+          vector-effect: non-scaling-stroke;
+          }
+    ]]>
+    </style>
+  </defs>
+  <path d="M49 12.19l2.78 5.64 6.22.9-4.5 4.39 1.06 6.19L49 26.39l-5.56 2.92 1.06-6.19-4.5-4.39 6.22-.9L49 12.19z"></path>
+  <rect width="64" height="64" x="3" y="3" rx="10" ry="10"></rect>
+  <path d="M41 41h16v16H41z"></path>
+  <rect width="16" height="16" x="13" y="13" rx="8" ry="8"></rect>
+  <path d="M21 42l-8.66 15h17.32L21 42z"></path>
+</svg>
+-->
+<!--
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <style type="text/css">
+      <![CDATA[
+      path {
+          fill: none;
+          stroke-width: 2px;
+          stroke: currentColor;
+          vector-effect: non-scaling-stroke;
+          }
+    ]]>
+    </style>
+  </defs>
+  <path d="M49 12.19l2.78 5.64 6.22.9-4.5 4.39 1.06 6.19L49 26.39l-5.56 2.92 1.06-6.19-4.5-4.39 6.22-.9L49 12.19z"></path>
+  <rect width="64" height="64" x="3" y="3" rx="10" ry="10"></rect>
+  <path d="M41 41h16v16H41z"></path>
+  <rect width="16" height="16" x="13" y="13" rx="8" ry="8"></rect>
+  <path d="M21 42l-8.66 15h17.32L21 42z"></path>
+</svg>
+-->
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70">
+  <defs>
+    <style type="text/css">
+      <![CDATA[
+      path {
+          fill: none;
+          stroke-width: 2px;
+          stroke: currentColor;
+          vector-effect: non-scaling-stroke;
+          }
+    ]]>
+    </style>
+  </defs>
+  <path d="M49 12.19l2.78 5.64 6.22.9-4.5 4.39 1.06 6.19L49 26.39l-5.56 2.92 1.06-6.19-4.5-4.39 6.22-.9L49 12.19z"></path>
+  <rect width="64" height="64" x="3" y="3" rx="10" ry="10"></rect>
+  <path d="M41 41h16v16H41z"></path>
+  <rect width="16" height="16" x="13" y="13" rx="8" ry="8"></rect>
+  <path d="M21 42l-8.66 15h17.32L21 42z"></path>
+</svg>

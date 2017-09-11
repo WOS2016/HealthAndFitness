@@ -1,0 +1,485 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo Material using Bootstrap</title>
+    <!-- BEGIN META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="your,keywords">
+    <meta name="description" content="Short explanation about this website">
+    <!-- END META -->
+    <!-- BEGIN STYLESHEETS -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300italic,400italic,300,400,500,700,900' rel='stylesheet' type='text/css' />
+    <link type="text/css" rel="stylesheet" href="http://www.codecovers.eu/assets/css/modules/materialadmin/css/theme-default/bootstrap.css?1422823238" />
+
+    <link type="text/css" rel="stylesheet" href="http://www.codecovers.eu/assets/css/modules/materialadmin/css/theme-default/materialadmin.css?1422823243" />
+
+    <link type="text/css" rel="stylesheet" href="http://www.codecovers.eu/assets/css/modules/materialadmin/css/theme-default/font-awesome.min.css?1422823239" />
+
+    <link type="text/css" rel="stylesheet" href="http://www.codecovers.eu/assets/css/modules/materialadmin/css/theme-default/material-design-iconic-font.min.css?1422823240" />
+
+
+    <link type="text/css" rel="stylesheet" href="http://www.codecovers.eu/assets/css/modules/materialadmin/css/theme-default/libs/rickshaw/rickshaw.css?1422823372" />
+
+    <link type="text/css" rel="stylesheet" href="http://www.codecovers.eu/assets/css/modules/materialadmin/css/theme-default/libs/morris/morris.core.css?1422823370" />
+
+    <!-- END STYLESHEETS -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="http://www.codecovers.eu/assets/js/modules/materialadmin/libs/utils/html5shiv.js?1422823601"></script>
+    <script type="text/javascript" src="http://www.codecovers.eu/assets/js/modules/materialadmin/libs/utils/respond.min.js?1422823601"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <!-- BEGIN HEADER-->
+    <header id="header">
+        <div class="headerbar">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="headerbar-left">
+                <ul class="header-nav header-nav-options">
+                    <li class="header-nav-brand">
+                        <div class="brand-holder">
+                            <a href="http://www.codecovers.eu/materialadmin/dashboards/dashboard">
+                                <span class="text-lg text-bold text-primary">MATERIAL ADMIN</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="btn btn-icon-toggle menubar-toggle" data-toggle="menubar" href="javascript:void(0);">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="headerbar-right">
+                <ul class="header-nav header-nav-options">
+                    <li>
+                        <!-- Search form -->
+                        <form class="navbar-search" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="headerSearch" placeholder="Enter your keyword">
+                            </div>
+                            <button type="submit" class="btn btn-icon-toggle ink-reaction"><i class="fa fa-search"></i></button>
+                        </form>
+                    </li>
+                    <li class="dropdown hidden-xs">
+                        <a href="javascript:void(0);" class="btn btn-icon-toggle btn-default" data-toggle="dropdown">
+                            <i class="fa fa-bell"></i><sup class="badge style-danger">4</sup>
+                        </a>
+                        <ul class="dropdown-menu animation-expand">
+                            <li class="dropdown-header">Today's messages</li>
+                            <li>
+                                <a class="alert alert-callout alert-warning" href="javascript:void(0);">
+                                    <img class="pull-right img-circle dropdown-avatar" src="http://www.codecovers.eu/assets/img/modules/materialadmin/avatar2.jpg?1422538624" alt="">
+                                    <strong>Alex Anistor</strong><br>
+                                    <small>Testing functionality...</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="alert alert-callout alert-info" href="javascript:void(0);">
+                                    <img class="pull-right img-circle dropdown-avatar" src="http://www.codecovers.eu/assets/img/modules/materialadmin/avatar3.jpg?1422538624" alt="">
+                                    <strong>Alicia Adell</strong><br>
+                                    <small>Reviewing last changes...</small>
+                                </a>
+                            </li>
+                            <li class="dropdown-header">Options</li>
+                            <li><a href="http://www.codecovers.eu/materialadmin/pages/login">View all messages <span class="pull-right"><i class="fa fa-arrow-right"></i></span></a></li>
+                            <li><a href="http://www.codecovers.eu/materialadmin/pages/login">Mark as read <span class="pull-right"><i class="fa fa-arrow-right"></i></span></a></li>
+                        </ul><!--end .dropdown-menu -->
+                    </li><!--end .dropdown -->
+                    <li class="dropdown hidden-xs">
+                        <a href="javascript:void(0);" class="btn btn-icon-toggle btn-default" data-toggle="dropdown">
+                            <i class="fa fa-area-chart"></i>
+                        </a>
+                        <ul class="dropdown-menu animation-expand">
+                            <li class="dropdown-header">Server load</li>
+                            <li class="dropdown-progress">
+                                <a href="javascript:void(0);">
+                                    <div class="dropdown-label">
+                                        <span class="text-light">Server load <strong>Today</strong></span>
+                                        <strong class="pull-right">93%</strong>
+                                    </div>
+                                    <div class="progress"><div class="progress-bar progress-bar-danger" style="width: 93%"></div></div>
+                                </a>
+                            </li><!--end .dropdown-progress -->
+                            <li class="dropdown-progress">
+                                <a href="javascript:void(0);">
+                                    <div class="dropdown-label">
+                                        <span class="text-light">Server load <strong>Yesterday</strong></span>
+                                        <strong class="pull-right">30%</strong>
+                                    </div>
+                                    <div class="progress"><div class="progress-bar progress-bar-success" style="width: 30%"></div></div>
+                                </a>
+                            </li><!--end .dropdown-progress -->
+                            <li class="dropdown-progress">
+                                <a href="javascript:void(0);">
+                                    <div class="dropdown-label">
+                                        <span class="text-light">Server load <strong>Lastweek</strong></span>
+                                        <strong class="pull-right">74%</strong>
+                                    </div>
+                                    <div class="progress"><div class="progress-bar progress-bar-warning" style="width: 74%"></div></div>
+                                </a>
+                            </li><!--end .dropdown-progress -->
+                        </ul><!--end .dropdown-menu -->
+                    </li><!--end .dropdown -->
+                </ul><!--end .header-nav-options -->
+                <ul class="header-nav header-nav-profile">
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle ink-reaction" data-toggle="dropdown">
+                            <img src="http://www.codecovers.eu/assets/img/modules/materialadmin/avatar1.jpg?1422538623" alt="">
+                            <span class="profile-info">
+                                Daniel Johnson
+                                <small>Administrator</small>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu animation-dock">
+                            <li class="dropdown-header">Config</li>
+                            <li><a href="http://www.codecovers.eu/materialadmin/pages/profile">My profile</a></li>
+                            <li><a href="http://www.codecovers.eu/materialadmin/pages/blog/post"><span class="badge style-danger pull-right">16</span>My blog</a></li>
+                            <li><a href="http://www.codecovers.eu/materialadmin/pages/calendar">My appointments</a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://www.codecovers.eu/materialadmin/pages/locked"><i class="fa fa-fw fa-lock"></i> Lock</a></li>
+                            <li><a href="http://www.codecovers.eu/materialadmin/pages/login"><i class="fa fa-fw fa-power-off text-danger"></i> Logout</a></li>
+                        </ul><!--end .dropdown-menu -->
+                    </li><!--end .dropdown -->
+                </ul><!--end .header-nav-profile -->
+                <ul class="header-nav header-nav-toggle">
+                    <li>
+                        <a class="btn btn-icon-toggle btn-default" href="#offcanvas-search" data-toggle="offcanvas" data-backdrop="false">
+                            <i class="fa fa-ellipsis-v"></i>
+                        </a>
+                    </li>
+                </ul><!--end .header-nav-toggle -->
+            </div><!--end #header-navbar-collapse -->
+        </div>
+    </header>
+    <!-- END HEADER-->
+    <!-- BEGIN Base-->
+
+    <!-- BEGIN OFFCANVAS LEFT-->
+    <div class="offcanvas"></div>
+    <!-- END OFFCANVAS LEFT-->
+
+
+    <!-- BEGIN CONTENT-->
+    <div id="content">
+
+
+    </div>
+    <!-- END CONTENT-->
+    <!-- BEGIN Menubar-->
+    <div id="menubar" class="menubar-inverse  animate">
+        <div class="menubar-fixed-panel">
+            <div>
+                <a class="btn btn-icon-toggle btn-default menubar-toggle" data-toggle="menubar" href="javascript:void(0);">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <div class="expanded">
+                <a href="http://www.codecovers.eu/materialadmin/dashboards/dashboard">
+                    <span class="text-lg text-bold text-primary ">MATERIAL&nbsp;ADMIN</span>
+                </a>
+            </div>
+        </div>
+        <div class="nano has-scrollbar" style="height: 122px;">
+            <div class="nano-content" tabindex="0" style="right: -11px;">
+                <div class="menubar-scroll-panel" style="padding-bottom: 33px;">
+                    <!-- BEGIN MAIN MENU -->
+
+
+
+
+                    <ul id="main-menu" class="gui-controls">
+                        <!-- BEGIN DASHBOARD -->
+                        <li class="active expanding expanded">
+                            <a href="http://www.codecovers.eu/materialadmin/dashboards/dashboard" class="active">
+                                <div class="gui-icon"><i class="md md-home"></i></div>
+                                <span class="title">Dashboard</span>
+                            </a>
+                        </li><!--end /menu-li -->
+                        <!-- END DASHBOARD -->
+                        <!-- BEGIN EMAIL -->
+                        <li class="gui-folder">
+                            <a>
+                                <div class="gui-icon"><i class="md md-email"></i></div>
+                                <span class="title">Email</span>
+                            </a>
+                            <!--start submenu -->
+                            <ul style="">
+                                <li><a href="http://www.codecovers.eu/materialadmin/mail/inbox"><span class="title">Inbox</span></a></li>
+
+                                <li><a href="http://www.codecovers.eu/materialadmin/mail/compose"><span class="title">Compose</span></a></li>
+
+                                <li><a href="http://www.codecovers.eu/materialadmin/mail/reply"><span class="title">Reply</span></a></li>
+
+                                <li><a href="http://www.codecovers.eu/materialadmin/mail/message"><span class="title">View message</span></a></li>
+
+                            </ul><!--end /submenu -->
+                        </li><!--end /menu-li -->
+                        <!-- END EMAIL -->
+                        <!-- BEGIN DASHBOARD -->
+                        <li>
+                            <a href="http://www.codecovers.eu/materialadmin/layouts/builder">
+                                <div class="gui-icon"><i class="md md-web"></i></div>
+                                <span class="title">Layouts</span>
+                            </a>
+                        </li><!--end /menu-li -->
+                        <!-- END DASHBOARD -->
+                        <!-- BEGIN UI -->
+                        <li class="gui-folder">
+                            <a>
+                                <div class="gui-icon"><i class="fa fa-puzzle-piece fa-fw"></i></div>
+                                <span class="title">UI elements</span>
+                            </a>
+                            <!--start submenu -->
+                            <ul style="">
+                                <li><a href="http://www.codecovers.eu/materialadmin/ui/colors"><span class="title">Colors</span></a></li>
+
+                                <li><a href="http://www.codecovers.eu/materialadmin/ui/typography"><span class="title">Typography</span></a></li>
+
+                                <li><a href="http://www.codecovers.eu/materialadmin/ui/cards"><span class="title">Cards</span></a></li>
+
+                                <li><a href="http://www.codecovers.eu/materialadmin/ui/buttons"><span class="title">Buttons</span></a></li>
+
+                                <li><a href="http://www.codecovers.eu/materialadmin/ui/lists"><span class="title">Lists</span></a></li>
+
+                                <li><a href="http://www.codecovers.eu/materialadmin/ui/tabs"><span class="title">Tabs</span></a></li>
+
+                                <li><a href="http://www.codecovers.eu/materialadmin/ui/accordions"><span class="title">Accordions</span></a></li>
+
+                                <li><a href="http://www.codecovers.eu/materialadmin/ui/messages"><span class="title">Messages</span></a></li>
+
+                                <li><a href="http://www.codecovers.eu/materialadmin/ui/offcanvas"><span class="title">Off-canvas</span></a></li>
+
+                                <li><a href="http://www.codecovers.eu/materialadmin/ui/grid"><span class="title">Grid</span></a></li>
+
+                                <li class="gui-folder">
+                                    <a href="javascript:void(0);">
+                                        <span class="title">Icons</span>
+                                    </a>
+                                    <!--start submenu -->
+                                    <ul>
+                                        <li><a href="http://www.codecovers.eu/materialadmin/ui/icons/materialicons"><span class="title">Material Design Icons</span></a></li>
+
+                                        <li><a href="http://www.codecovers.eu/materialadmin/ui/icons/fontawesome"><span class="title">Font Awesome</span></a></li>
+
+                                        <li><a href="http://www.codecovers.eu/materialadmin/ui/icons/glyphicons"><span class="title">Glyphicons</span></a></li>
+
+                                        <li><a href="http://www.codecovers.eu/materialadmin/ui/icons/skycons"><span class="title">Skycons</span></a></li>
+
+                                    </ul><!--end /submenu -->
+                                </li><!--end /menu-li -->
+                            </ul><!--end /submenu -->
+                        </li><!--end /menu-li -->
+                        <!-- END UI -->
+                        <!-- BEGIN TABLES -->
+                        <li class="gui-folder">
+                            <a>
+                                <div class="gui-icon"><i class="fa fa-table"></i></div>
+                                <span class="title">Tables</span>
+                            </a>
+                            <!--start submenu -->
+                            <ul style="">
+                                <li><a href="http://www.codecovers.eu/materialadmin/tables/static"><span class="title">Static Tables</span></a></li>
+
+                                <li><a href="http://www.codecovers.eu/materialadmin/tables/dynamic"><span class="title">Dynamic Tables</span></a></li>
+
+                                <li><a href="http://www.codecovers.eu/materialadmin/tables/responsive"><span class="title">Responsive Table</span></a></li>
+
+                            </ul><!--end /submenu -->
+                        </li><!--end /menu-li -->
+                        <!-- END TABLES -->
+                        <!-- BEGIN FORMS -->
+                        <li class="gui-folder">
+                            <a>
+                                <div class="gui-icon"><span class="glyphicon glyphicon-list-alt"></span></div>
+                                <span class="title">Forms</span>
+                            </a>
+                            <!--start submenu -->
+                            <ul style="">
+                                <li><a href="http://www.codecovers.eu/materialadmin/forms/basic"><span class="title">Form basic</span></a></li>
+
+                                <li><a href="http://www.codecovers.eu/materialadmin/forms/advanced"><span class="title">Form advanced</span></a></li>
+
+                                <li><a href="http://www.codecovers.eu/materialadmin/forms/layouts"><span class="title">Form layouts</span></a></li>
+
+                                <li><a href="http://www.codecovers.eu/materialadmin/forms/editors"><span class="title">Editors</span></a></li>
+
+                                <li><a href="http://www.codecovers.eu/materialadmin/forms/validation"><span class="title">Form validation</span></a></li>
+
+                                <li><a href="http://www.codecovers.eu/materialadmin/forms/wizard"><span class="title">Form wizard</span></a></li>
+
+                            </ul><!--end /submenu -->
+                        </li><!--end /menu-li -->
+                        <!-- END FORMS -->
+                        <!-- BEGIN PAGES -->
+                        <li class="gui-folder">
+                            <a>
+                                <div class="gui-icon"><i class="md md-computer"></i></div>
+                                <span class="title">Pages</span>
+                            </a>
+                            <!--start submenu -->
+                            <ul style="">
+                                <li class="gui-folder">
+                                    <a href="javascript:void(0);">
+                                        <span class="title">Contacts</span>
+                                    </a>
+                                    <!--start submenu -->
+                                    <ul>
+                                        <li><a href="http://www.codecovers.eu/materialadmin/pages/contacts/search"><span class="title">Search</span></a></li>
+
+                                        <li><a href="http://www.codecovers.eu/materialadmin/pages/contacts/details"><span class="title">Contact card</span></a></li>
+
+                                        <li><a href="http://www.codecovers.eu/materialadmin/pages/contacts/add"><span class="title">Insert contact</span></a></li>
+
+                                    </ul><!--end /submenu -->
+                                </li><!--end /menu-li -->
+                                <li class="gui-folder">
+                                    <a href="javascript:void(0);">
+                                        <span class="title">Search</span>
+                                    </a>
+                                    <!--start submenu -->
+                                    <ul>
+                                        <li><a href="http://www.codecovers.eu/materialadmin/pages/search/results-text"><span class="title">Results - Text</span></a></li>
+
+                                        <li><a href="http://www.codecovers.eu/materialadmin/pages/search/results-text-image"><span class="title">Results - Text and Image</span></a></li>
+
+                                    </ul><!--end /submenu -->
+                                </li><!--end /menu-li -->
+                                <li class="gui-folder">
+                                    <a href="javascript:void(0);">
+                                        <span class="title">Blog</span>
+                                    </a>
+                                    <!--start submenu -->
+                                    <ul>
+                                        <li><a href="http://www.codecovers.eu/materialadmin/pages/blog/masonry"><span class="title">Blog masonry</span></a></li>
+
+                                        <li><a href="http://www.codecovers.eu/materialadmin/pages/blog/list"><span class="title">Blog list</span></a></li>
+
+                                        <li><a href="http://www.codecovers.eu/materialadmin/pages/blog/post"><span class="title">Blog post</span></a></li>
+
+                                    </ul><!--end /submenu -->
+                                </li><!--end /menu-li -->
+                                <li class="gui-folder">
+                                    <a href="javascript:void(0);">
+                                        <span class="title">Error pages</span>
+                                    </a>
+                                    <!--start submenu -->
+                                    <ul>
+                                        <li><a href="http://www.codecovers.eu/materialadmin/pages/404"><span class="title">404 page</span></a></li>
+
+                                        <li><a href="http://www.codecovers.eu/materialadmin/pages/500"><span class="title">500 page</span></a></li>
+
+                                    </ul><!--end /submenu -->
+                                </li><!--end /menu-li -->
+                                <li><a href="http://www.codecovers.eu/materialadmin/pages/profile"><span class="title">User profile<span class="badge style-accent">42</span></span></a></li>
+
+                                <li><a href="http://www.codecovers.eu/materialadmin/pages/invoice"><span class="title">Invoice</span></a></li>
+
+                                <li><a href="http://www.codecovers.eu/materialadmin/pages/calendar"><span class="title">Calendar</span></a></li>
+
+                                <li><a href="http://www.codecovers.eu/materialadmin/pages/pricing"><span class="title">Pricing</span></a></li>
+
+                                <li><a href="http://www.codecovers.eu/materialadmin/pages/timeline"><span class="title">Timeline</span></a></li>
+
+                                <li><a href="http://www.codecovers.eu/materialadmin/pages/maps"><span class="title">Maps</span></a></li>
+
+                                <li><a href="http://www.codecovers.eu/materialadmin/pages/locked"><span class="title">Lock screen</span></a></li>
+
+                                <li><a href="http://www.codecovers.eu/materialadmin/pages/login"><span class="title">Login</span></a></li>
+
+                                <li><a href="http://www.codecovers.eu/materialadmin/pages/blank"><span class="title">Blank page</span></a></li>
+
+                            </ul><!--end /submenu -->
+                        </li><!--end /menu-li -->
+                        <!-- END FORMS -->
+                        <!-- BEGIN CHARTS -->
+                        <li>
+                            <a href="http://www.codecovers.eu/materialadmin/charts/charts">
+                                <div class="gui-icon"><i class="md md-assessment"></i></div>
+                                <span class="title">Charts</span>
+                            </a>
+                        </li><!--end /menu-li -->
+                        <!-- END CHARTS -->
+                        <!-- BEGIN LEVELS -->
+                        <li class="gui-folder">
+                            <a>
+                                <div class="gui-icon"><i class="fa fa-folder-open fa-fw"></i></div>
+                                <span class="title">Menu levels demo</span>
+                            </a>
+                            <!--start submenu -->
+                            <ul style="">
+                                <li><a href="#"><span class="title">Item 1</span></a></li>
+                                <li><a href="#"><span class="title">Item 1</span></a></li>
+                                <li class="gui-folder">
+                                    <a href="javascript:void(0);">
+                                        <span class="title">Open level 2</span>
+                                    </a>
+                                    <!--start submenu -->
+                                    <ul>
+                                        <li><a href="#"><span class="title">Item 2</span></a></li>
+                                        <li class="gui-folder">
+                                            <a href="javascript:void(0);">
+                                                <span class="title">Open level 3</span>
+                                            </a>
+                                            <!--start submenu -->
+                                            <ul>
+                                                <li><a href="#"><span class="title">Item 3</span></a></li>
+                                                <li><a href="#"><span class="title">Item 3</span></a></li>
+                                                <li class="gui-folder">
+                                                    <a href="javascript:void(0);">
+                                                        <span class="title">Open level 4</span>
+                                                    </a>
+                                                    <!--start submenu -->
+                                                    <ul>
+                                                        <li><a href="#"><span class="title">Item 4</span></a></li>
+                                                        <li class="gui-folder">
+                                                            <a href="javascript:void(0);">
+                                                                <span class="title">Open level 5</span>
+                                                            </a>
+                                                            <!--start submenu -->
+                                                            <ul>
+                                                                <li><a href="#"><span class="title">Item 5</span></a></li>
+                                                                <li><a href="#"><span class="title">Item 5</span></a></li>
+                                                            </ul><!--end /submenu -->
+                                                        </li><!--end /submenu-li -->
+                                                    </ul><!--end /submenu -->
+                                                </li><!--end /submenu-li -->
+                                            </ul><!--end /submenu -->
+                                        </li><!--end /submenu-li -->
+                                    </ul><!--end /submenu -->
+                                </li><!--end /submenu-li -->
+                            </ul><!--end /submenu -->
+                        </li><!--end /menu-li -->
+                        <!-- END LEVELS -->
+
+                    </ul><!--end .main-menu -->
+                    <!-- END MAIN MENU -->
+
+                    <div class="menubar-foot-panel">
+                        <small class="no-linebreak hidden-folded">
+                            <span class="opacity-75">Copyright © 2014</span> <strong>CodeCovers</strong>
+                        </small>
+                    </div>
+                </div>
+            </div><div class="nano-pane"><div class="nano-slider" style="height: 27px; transform: translate(0px, 0px);"></div></div>
+        </div><!--end .menubar-scroll-panel-->
+    </div>
+    <!-- END Menubar--> 
+    <!-- BEGIN OFFCANVAS Right-->
+    <div class="offcanvas">
+        <div id="offcanvas-search"></div>
+        <div id="offcanvas-chat"></div>
+    </div>
+    <!-- END OFFCANVAS Right-->  
+
+    <!-- END Base-->  
+
+    <!-- BEGIN JavaScript-->
+
+    <!-- END JavaScript-->  
+</body>
+</html>

@@ -261,9 +261,17 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\ReadmeLess.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="DemoWebSiteTemplate\Kendo\SupportedStyle.svg" />
+    <Content Include="DemoWebSiteTemplate\Kendo\PowerfulStyle.svg" />
+    <Content Include="DemoWebSiteTemplate\Kendo\VersatileStyle.svg" />
+    <Content Include="DemoWebSiteTemplate\Kendo\FlexibleStyle.svg" />
+    <Content Include="DemoWebSiteTemplate\Kendo\Flexible.svg" />
+    <Content Include="DemoWebSiteTemplate\MSCore\MSCoreIndex.html" />
+    <Content Include="DemoWebSiteTemplate\Telus\TelusIndex.html" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="ngApp\controllers\dashboards\index.html" />
     <Content Include="ngApp\demoApp.js" />
     <Content Include="ngApp\directives\commonUI\ngBackTop.html" />
     <Content Include="ngApp\directives\commonUI\ngBackTop.js" />
@@ -1148,7 +1156,6 @@
     <Folder Include="Content\LessStyles\State\" />
     <Folder Include="Content\LessStyles\Theme\" />
     <Folder Include="Content\LessStyles\Vendors\" />
-    <Folder Include="ngApp\controllers\" />
     <Folder Include="ngApp\filters\" />
   </ItemGroup>
   <ItemGroup>

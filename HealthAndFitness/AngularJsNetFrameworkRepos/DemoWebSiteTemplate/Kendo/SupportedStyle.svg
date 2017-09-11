@@ -1,0 +1,28 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70">
+  <defs>
+    <style type="text/css">
+      <![CDATA[
+      path {
+          fill: none;
+          stroke-width: 2px;
+          stroke: currentColor;
+          vector-effect: non-scaling-stroke;
+          }
+    ]]>
+    </style>
+  </defs>
+  <g class="complex">
+    <circle cx="21.61" cy="31.61" r="1"></circle>
+    <circle cx="47.61" cy="31.61" r="1"></circle>
+    <path d="M33.6 60.51h15a6 6 0 0 0 6-6V22.6a20 20 0 0 0-20-20 20 20 0 0 0-20 20v3.91"></path>
+    <path d="M54.6 52.51a12 12 0 0 0 12-12V36.6a12 12 0 0 0-12-12M14.6 24.6v27.91a12 12 0 0 1-12-12V36.6a12 12 0 0 1 12-12zM31.6 25.55v19h6"></path>
+    <circle cx="34.8" cy="60.6" r="6"></circle>
+  </g>
+  <g class="simple">
+    <circle cx="22.02" cy="33.22" r="1.4"></circle>
+    <circle cx="47.22" cy="33.22" r="1.4"></circle>
+    <path d="M59.82 48.49a8.4 8.4 0 0 0 8.4-8.4V34.6a8.4 8.4 0 0 0-8.4-8.4M9.4 26.21v22.28a8.4 8.4 0 0 1-8.4-8.4V34.6a8.4 8.4 0 0 1 8.4-8.39zM31.81 30.35v18.2h7"></path>
+    <circle cx="34.89" cy="62.62" r="5.6"></circle>
+    <path d="M40.5 62.5a19.31 19.31 0 0 0 19.31-19.31v-17A25.2 25.2 0 0 0 34.6 1 25.2 25.2 0 0 0 9.4 26.2v2.68"></path>
+  </g>
+</svg>
