@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="GData.Extensions\**" />
+    <EmbeddedResource Remove="GData.Extensions\**" />
+    <None Remove="GData.Extensions\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RewriteCoreClient\RewriteCoreClient.csproj" />
+    <ProjectReference Include="..\RewriteGDataExtensions\RewriteGDataExtensions.csproj" />
+  </ItemGroup>
+
+</Project>

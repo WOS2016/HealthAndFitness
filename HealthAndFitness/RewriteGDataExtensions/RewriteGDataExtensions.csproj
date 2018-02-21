@@ -5,8 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DesignPatterns\" />
-    <Folder Include="WinEventLogger\" />
+    <ProjectReference Include="..\RewriteCoreClient\RewriteCoreClient.csproj" />
   </ItemGroup>
 
 </Project>
